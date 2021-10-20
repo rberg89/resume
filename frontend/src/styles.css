@@ -1,0 +1,17 @@
+/* RDB can add global styles to this file, and also import other style files */
+
+.center {
+  text-align: center !important;
+}
+
+.welcomePageCol {
+  background-color: bisque;
+  height: 80vh;
+  border-radius: 5px;
+  border: 2px solid burlywood;
+  margin-top:5vh;
+}
+
+.homepage h1 {
+  padding: 5px;
+}
