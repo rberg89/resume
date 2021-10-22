@@ -1,9 +1,10 @@
 {
-  "name": "demoproject",
+  "name": "resume",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "debug": "nodemon --inspect ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
