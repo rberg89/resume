@@ -3,6 +3,14 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var cors = require('cors');
+
+//CORS for dev environment, whitelist angular dev server
+var corsOptions = {
+  origin: 'http://localhost:4200', //todo make dynamic?
+  optionsSuccessStatus: 200 // For legacy browser support
+}
+app.use(cors(corsOptions));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
